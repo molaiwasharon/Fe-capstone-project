@@ -1,16 +1,4 @@
 /* src/style.css */
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("../images/R.jpg");
-  /* Specify the path to your background image */
-  background-size: cover; /* Ensures the image covers the entire page */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents the background from repeating */
-  height: 100vh; /* Ensures it covers the full viewport height */
-  width: 100%;
-}
-
 .app-container {
   max-width: 600px;
   margin: 0 auto;
