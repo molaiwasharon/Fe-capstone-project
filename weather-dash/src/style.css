@@ -56,7 +56,7 @@ button {
 
 .weather-card {
   padding: 20px;
-  background-color: #dcf3f7;
+  background-color: none;
   text-align: left;
   font-family: "roboto";
 }
