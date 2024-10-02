@@ -6,7 +6,7 @@
   text-align: center;
   border: 2px solid #885df1; /* Main border around the entire content */
   border-radius: 10px; /* Optional: Rounded corners */
-  background-color: pink; /* Optional: Background color */
+  background: linear-gradient(to right, pink, purple);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a 3D effect */
 }
 
@@ -30,7 +30,7 @@
 }
 
 input {
-  background-color: white;
+  background-color: none;
   border: none;
   color: black;
   padding: 20px;
