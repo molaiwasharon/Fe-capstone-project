@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("weather-dash/src/images/R.jpg"); /* Specify the path to your background image */
+  background-image: url("../images/R.jpg");
+  /* Specify the path to your background image */
   background-size: cover; /* Ensures the image covers the entire page */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the background from repeating */
