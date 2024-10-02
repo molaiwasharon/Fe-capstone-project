@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  background-color: black;
+  background-color: none;
   border: none;
   color: rgba(39, 33, 66, 0.4);
   padding: 20px;
