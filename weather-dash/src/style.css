@@ -1,0 +1,104 @@
+/* src/style.css */
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  border: 2px solid #885df1; /* Main border around the entire content */
+  border-radius: 10px; /* Optional: Rounded corners */
+  background-color: #f9f9f9; /* Optional: Background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a 3D effect */
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: "roboto";
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: black;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  padding: 20px;
+  width: 95%;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+input {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 20px;
+  width: 85%;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #885df1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.weather-card {
+  padding: 20px;
+  background-color: #dcf3f7;
+  text-align: left;
+  font-family: "roboto";
+}
+.description {
+  text-align: left;
+}
+
+.weather-card h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-info-header {
+  display: flex;
+  align-items: center;
+}
+
+.weather-info {
+  font-size: 1.2rem;
+}
+
+.error-message {
+  color: red;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.weather-info p {
+  margin: 5px 0;
+}
+
+.description p {
+  font-size: 0.9em;
+  color: #555;
+}
+.weather-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
