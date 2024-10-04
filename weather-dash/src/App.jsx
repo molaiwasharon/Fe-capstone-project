@@ -12,7 +12,7 @@ const App = () => {
   const [error, setError] = useState("");
   const [currentDateTime, setCurrentDateTime] = useState("");
 
-  // Function to format the current date and time
+  // Function to format the current date and time with day, month, and year
   const displayCurrentDateTime = () => {
     const currentDate = new Date();
     const days = [
@@ -24,7 +24,25 @@ const App = () => {
       "Friday",
       "Saturday",
     ];
-    const day = days[currentDate.getDay()];
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+
+    const dayOfWeek = days[currentDate.getDay()];
+    const day = currentDate.getDate();
+    const month = months[currentDate.getMonth()];
+    const year = currentDate.getFullYear();
     const hours =
       currentDate.getHours() < 10
         ? `0${currentDate.getHours()}`
@@ -34,7 +52,7 @@ const App = () => {
         ? `0${currentDate.getMinutes()}`
         : currentDate.getMinutes();
 
-    return `${day} ${hours}:${minutes}`;
+    return `${dayOfWeek}, ${day} ${month} ${year}, ${hours}:${minutes}`;
   };
 
   // Fetch weather data from OpenWeather API
@@ -54,20 +72,21 @@ const App = () => {
     }
   };
 
-  // Update weather and current time when city changes
+  //  Called when city changes or component mounts
   useEffect(() => {
-    fetchWeatherData(); // Fetch weather on city change or initial mount
-    setCurrentDateTime(displayCurrentDateTime()); // Update time immediately
-  }, [city]); // Add city as dependency
+    fetchWeatherData(); // Fetch weather when the city changes or initially
+    setCurrentDateTime(displayCurrentDateTime()); // Set current time immediately
+  }, [city]); // This hook runs when the city changes
 
-  // Update the time every minute
+  //  Called every minute to update the time
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentDateTime(displayCurrentDateTime());
-    }, 60000);
+      setCurrentDateTime(displayCurrentDateTime()); // Update time every minute
+    }, 60000); // 60000 ms = 1 minute
 
-    return () => clearInterval(timer); // Clean up the timer
-  }, []);
+    // Clean up the timer when the component unmounts
+    return () => clearInterval(timer);
+  }, []); // This hook sets up the interval when the component mounts
 
   return (
     <div className="app-container">

@@ -29,7 +29,7 @@ const WeatherCard = ({ data, currentDateTime }) => {
           <p>{weatherDescription}</p>
         </div>
         <div className="date-time">
-          <p>Current Date and Time: {currentDateTime}</p>
+          <p>Date and Time: {currentDateTime}</p>
         </div>
       </div>
     </div>
