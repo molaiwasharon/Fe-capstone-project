@@ -1,9 +1,7 @@
-// src/components/WeatherCard.jsx
-
 import React from "react";
 import "../style.css"; // Go one directory up to access the style.css
 
-const WeatherCard = ({ data }) => {
+const WeatherCard = ({ data, currentDateTime }) => {
   const { name, main, weather, wind } = data;
   const temperature = main.temp;
   const humidity = main.humidity;
@@ -29,6 +27,9 @@ const WeatherCard = ({ data }) => {
         <p>Wind Speed: {windSpeed} km/h</p>
         <div className="description">
           <p>{weatherDescription}</p>
+        </div>
+        <div className="date-time">
+          <p>Current Date and Time: {currentDateTime}</p>
         </div>
       </div>
     </div>
