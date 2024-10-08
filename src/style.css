@@ -6,7 +6,7 @@
   text-align: center;
   border: 2px solid #885df1; /* Main border around the entire content */
   border-radius: 10px; /* Optional: Rounded corners */
-  background: linear-gradient(to right, pink, #eb0beb);
+  background: linear-gradient(to right, pink, rgb(235, 11, 235));
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a 3D effect */
   color: white;
 }
