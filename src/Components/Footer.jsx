@@ -19,7 +19,11 @@ const Footer = () => {
           on GitHub{" "}
         </a>
         and
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://67065da507f3381c991779de--super-starship-91d659.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {" "}
           hosted on Netlify
         </a>
